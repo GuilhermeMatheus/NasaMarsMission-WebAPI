@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.15
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nasa.Mission.Mars.WebAPI", "Nasa.Mission.Mars.WebAPI\Nasa.Mission.Mars.WebAPI.csproj", "{E48F2AED-35F2-4165-A895-44800759B198}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nasa.Mission.Mars.Entity", "Nasa.Mission.Mars.Entity\Nasa.Mission.Mars.Entity.csproj", "{57794E1C-21F4-4E6C-B7A3-280C0CDAAA80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nasa.Mission.Mars.DAL", "Nasa.Mission.Mars.DAL\Nasa.Mission.Mars.DAL.csproj", "{5679FEE4-FBB6-4D47-8095-2BEED9369597}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nasa.Mission.Mars.DAL.Dumb", "Nasa.Mission.Mars.DAL.Dumb\Nasa.Mission.Mars.DAL.Dumb.csproj", "{BEA65164-FE0A-4DA2-AF65-875BCFE0107F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nasa.Mission.Mars.Services", "Nasa.Mission.Mars.Services\Nasa.Mission.Mars.Services.csproj", "{45FDCCF1-5CC1-4581-B809-13B11AC7F9B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nasa.Mission.Mars.WebAPI.Tests", "Nasa.Mission.Mars.WebAPI.Tests\Nasa.Mission.Mars.WebAPI.Tests.csproj", "{CCAAFF07-5EF7-4286-A4F5-D5782C467C75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E48F2AED-35F2-4165-A895-44800759B198}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E48F2AED-35F2-4165-A895-44800759B198}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E48F2AED-35F2-4165-A895-44800759B198}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E48F2AED-35F2-4165-A895-44800759B198}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57794E1C-21F4-4E6C-B7A3-280C0CDAAA80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57794E1C-21F4-4E6C-B7A3-280C0CDAAA80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57794E1C-21F4-4E6C-B7A3-280C0CDAAA80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57794E1C-21F4-4E6C-B7A3-280C0CDAAA80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5679FEE4-FBB6-4D47-8095-2BEED9369597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5679FEE4-FBB6-4D47-8095-2BEED9369597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5679FEE4-FBB6-4D47-8095-2BEED9369597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5679FEE4-FBB6-4D47-8095-2BEED9369597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA65164-FE0A-4DA2-AF65-875BCFE0107F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA65164-FE0A-4DA2-AF65-875BCFE0107F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA65164-FE0A-4DA2-AF65-875BCFE0107F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA65164-FE0A-4DA2-AF65-875BCFE0107F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FDCCF1-5CC1-4581-B809-13B11AC7F9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FDCCF1-5CC1-4581-B809-13B11AC7F9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FDCCF1-5CC1-4581-B809-13B11AC7F9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FDCCF1-5CC1-4581-B809-13B11AC7F9B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CCAAFF07-5EF7-4286-A4F5-D5782C467C75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCAAFF07-5EF7-4286-A4F5-D5782C467C75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCAAFF07-5EF7-4286-A4F5-D5782C467C75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCAAFF07-5EF7-4286-A4F5-D5782C467C75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {04215B9F-D64F-4251-8CF6-35E1D64838C3}
+	EndGlobalSection
+EndGlobal
