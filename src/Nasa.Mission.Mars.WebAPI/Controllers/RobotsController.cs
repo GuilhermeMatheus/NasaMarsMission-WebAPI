@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Description;
 
 namespace Nasa.Mission.Mars.WebAPI.Controllers
 {
@@ -19,7 +20,14 @@ namespace Nasa.Mission.Mars.WebAPI.Controllers
         public IEnumerable<Robot> Get() =>
             _repository.Get();
 
-        public Robot Get(int id) =>
-            _repository.Get(id);
+        [ResponseType(typeof(Robot))]
+        public IHttpActionResult Get(int id)
+        {
+            var item = _repository.Get(id);
+            if (item == null)
+                return NotFound();
+
+            return Ok(item);
+        }
     }
 }
