@@ -112,5 +112,16 @@ namespace Nasa.Mission.Mars.Entity
 
             Direction = Direction.Left();
         }
+
+        public override bool Equals(object obj)
+        {
+            if (obj == null || GetType() != obj.GetType())
+                return false;
+
+            var that = (Robot)obj;
+            return that.GetHashCode() == GetHashCode();
+        }
+
+        public override int GetHashCode() => Id;
     }
 }
