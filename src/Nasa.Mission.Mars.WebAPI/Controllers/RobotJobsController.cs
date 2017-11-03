@@ -11,6 +11,9 @@ namespace Nasa.Mission.Mars.WebAPI.Controllers
     [RoutePrefix("api/robots")]
     public class RobotJobsController : ApiController
     {
+        //Uma vez que esse conceito foge do escopo
+        //do projeto, vamos sempre retornar um JOB
+        //completado.
         [Route("{robotId:int}/jobs/{jobId:int}")]
         public RobotJob Get(int robotId, int jobId) =>
             new RobotJob(jobId);
