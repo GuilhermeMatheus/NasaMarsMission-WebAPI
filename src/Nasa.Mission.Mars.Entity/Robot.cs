@@ -67,10 +67,10 @@ namespace Nasa.Mission.Mars.Entity
         public void PutOnLand(Position position, Direction direction)
         {
             if (JourneyStatus == JourneyStatus.OnTravel)
-                throw new InvalidOperationException("Robot cannot land while traveling");
+                throw new ConstraintException("Robot cannot land while traveling");
 
             if (JourneyStatus == JourneyStatus.OnLand)
-                throw new InvalidOperationException("Robot is already on land");
+                throw new ConstraintException("Robot is already on land");
 
             JourneyStatus = JourneyStatus.OnLand;
             Position = position;
@@ -80,7 +80,7 @@ namespace Nasa.Mission.Mars.Entity
         public void MoveForward()
         {
             if(JourneyStatus != JourneyStatus.OnLand)
-                throw new InvalidOperationException("Robot must be on land to move forward");
+                throw new ConstraintException("Robot must be on land to move forward");
 
             switch (Direction)
             {
@@ -101,14 +101,14 @@ namespace Nasa.Mission.Mars.Entity
         public void TurnRight()
         {
             if (JourneyStatus != JourneyStatus.OnLand)
-                throw new InvalidOperationException("Robot must be on land to turn right");
+                throw new ConstraintException("Robot must be on land to turn right");
 
             Direction = Direction.Right();
         }
         public void TurnLeft()
         {
             if (JourneyStatus != JourneyStatus.OnLand)
-                throw new InvalidOperationException("Robot must be on land to turn left");
+                throw new ConstraintException("Robot must be on land to turn left");
 
             Direction = Direction.Left();
         }

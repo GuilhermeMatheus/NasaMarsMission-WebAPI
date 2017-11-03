@@ -34,7 +34,7 @@ namespace Nasa.Mission.Mars.Entity.ModelConstraints
                 GetConstraintsOfProperty(propertyName).Any(_ => _.GetType().Equals(cType));
 
             if (propertyAlreadyContainsThisTypeOfConstraint)
-                throw new InvalidOperationException($"Constraint of Type {cType} for {typeof(TModel)}::{propertyName} must be unique.");
+                throw new ConstraintException($"Constraint of Type {cType} for {typeof(TModel)}::{propertyName} must be unique.");
 
             AddConstraintOfProperty(propertyName, constraint);
         }
